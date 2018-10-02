@@ -856,11 +856,11 @@ open class SCLAlertView: UIViewController {
         circleIconView?.layer.masksToBounds = true
         
         for txt in inputs {
-            txt.layer.borderColor = UIColor.lightGray.cgColor
+            txt.layer.borderColor = UIColor.darkGray.cgColor
         }
         
         for txt in input {
-            txt.layer.borderColor = UIColor.lightGray.cgColor
+            txt.layer.borderColor = UIColor.darkGray.cgColor
         }
         
         for btn in buttons {

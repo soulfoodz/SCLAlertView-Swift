@@ -159,6 +159,7 @@ open class SCLAlertView: UIViewController {
         let contentViewBorderColor: UIColor
         let titleColor: UIColor
         let subTitleColor: UIColor
+        let closeButtonColor: UIColor
 
         let margin: Margin
         /// Margin for SCLAlertView.
@@ -824,7 +825,7 @@ open class SCLAlertView: UIViewController {
         // Done button
         if appearance.showCloseButton {
             // eric - Customize the buttons appearance
-            _ = addButton(completeText ?? "Done", backgroundColor: .red, textColor: .white, showTimeout: nil, target: self, selector: #selector(SCLAlertView.hideView))
+            _ = addButton(completeText ?? "Done", backgroundColor: closeButtonColor ?? .red, textColor: .white, showTimeout: nil, target: self, selector: #selector(SCLAlertView.hideView))
 //            _ = addButton(completeText ?? "Done", target:self, selector:#selector(SCLAlertView.hideView))
         }
         

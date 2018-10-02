@@ -97,6 +97,9 @@ typedef struct _NSZone NSZone;
 @class UITextField;
 @class SCLButton;
 
+
+/* Eric
+ 
 SWIFT_CLASS("_TtC12SCLAlertView12SCLAlertView")
 @interface SCLAlertView : UIViewController
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -117,5 +120,6 @@ SWIFT_CLASS("_TtC12SCLAlertView9SCLButton")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
+ */
 
 #pragma clang diagnostic pop

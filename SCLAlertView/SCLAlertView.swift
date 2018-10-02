@@ -823,7 +823,9 @@ open class SCLAlertView: UIViewController {
         
         // Done button
         if appearance.showCloseButton {
-            _ = addButton(completeText ?? "Done", target:self, selector:#selector(SCLAlertView.hideView))
+            // eric - Customize the buttons appearance
+            _ = addButton(completeText ?? "Done", backgroundColor: .red, textColor: .white, showTimeout: nil, target: self, selector: #selector(SCLAlertView.hideView))
+//            _ = addButton(completeText ?? "Done", target:self, selector:#selector(SCLAlertView.hideView))
         }
         
         //hidden/show circular view based on the ui option
@@ -854,11 +856,11 @@ open class SCLAlertView: UIViewController {
         circleIconView?.layer.masksToBounds = true
         
         for txt in inputs {
-            txt.layer.borderColor = viewColor.cgColor
+            txt.layer.borderColor = UIColor.darkText.cgColor
         }
         
         for txt in input {
-            txt.layer.borderColor = viewColor.cgColor
+            txt.layer.borderColor = UIColor.darkText.cgColor
         }
         
         for btn in buttons {

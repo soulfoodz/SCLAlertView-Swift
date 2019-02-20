@@ -238,7 +238,7 @@ open class SCLAlertView: UIViewController {
             self.titleColor = titleColor
             self.subTitleColor = subTitleColor
             self.closeButtonColor = closeButtonColor
-        
+            
             self.margin = margin
         
             self.kTitleFont = kTitleFont
@@ -295,6 +295,7 @@ open class SCLAlertView: UIViewController {
     
     // UI Options
     open var iconTintColor: UIColor?
+    open var circleViewColor: UIColor?
     open var customSubview : UIView?
     
     // Members declaration
@@ -835,7 +836,7 @@ open class SCLAlertView: UIViewController {
         circleBG.isHidden = !appearance.showCircularIcon
         
         // Alert view colour and images
-        circleView.backgroundColor = viewColor
+        circleView.backgroundColor = circleViewColor ?? viewColor
         
         // Spinner / icon
         if style == .wait {
